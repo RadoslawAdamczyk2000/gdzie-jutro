@@ -5,6 +5,7 @@ export const NavigationWrapper = styled.nav`
     display:flex;
     position:sticky;
     top:0;
+    z-index:999999999999999999999999999999;
     &.desktop{
         height:5.35rem;
         justify-content:space-between;
