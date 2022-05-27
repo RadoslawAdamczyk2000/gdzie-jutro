@@ -1,6 +1,7 @@
-import Document, {Html,Head,Main,NextScript,DocumentContext,} from "next/document";
+import Document, {Html,Head,Main,NextScript,DocumentContext} from "next/document";
 import { ServerStyleSheet } from "styled-components";
-  class MyDocument extends Document {
+
+class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
       const sheet = new ServerStyleSheet();
       const originalRenderPage = ctx.renderPage;
@@ -31,9 +32,6 @@ import { ServerStyleSheet } from "styled-components";
             <meta property="og:site_name" content='RadWEB'/>
             <meta name="twitter:site" content="@rad_web2000"/>
             <meta name="twitter:creator" content="@rad_web2000"/>
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-            <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
           </Head>
           <body>
             <Main />
