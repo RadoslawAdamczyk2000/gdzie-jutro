@@ -37,6 +37,12 @@ export const MenuItemWrapper = styled.li`
             &::before{
                 height:.3rem;
             }
+            @media only screen{
+                @media (max-width:900px){
+                    font-size:1.8rem;
+                    height:2.5rem;
+                }
+            }
         }
         & > .button{
             align-items:center;
@@ -51,6 +57,13 @@ export const MenuItemWrapper = styled.li`
             &:hover{
                 color:${({theme}) => theme.colors.navigation.hover};
                 transform:scale(.95);
+            }
+            @media only screen{
+                @media (max-width:900px){
+                    font-size:1.75rem;
+                    height:2.5rem;
+                    width:2.5rem;
+                }
             }
         }
     }
@@ -73,6 +86,11 @@ export const MenuItemWrapper = styled.li`
                     font-size:1.8rem;
                     font-weight:500;
                     position:relative;
+                    @media only screen{
+                        @media (max-width:900px){
+                            font-size:1.6rem;
+                        }
+                    }
                 }
             }
         }
@@ -86,5 +104,13 @@ export const MenuWrapper = styled.menu`
     gap:1.25rem;
     justify-content:center;
     padding:0 2rem;
+    @media only screen{
+        @media (max-width:900px){
+            padding:0 1rem;
+        }
+        @media (max-width:750px){
+            gap:.5rem;
+        }
+    }
     
 `

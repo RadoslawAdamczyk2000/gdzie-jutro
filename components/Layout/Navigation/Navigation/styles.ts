@@ -14,11 +14,15 @@ export const NavigationWrapper = styled.nav`
             display:flex;
             justify-content:center;
         }
-
-
         @media only screen{
             @media (min-width:1450px){
                 height:6rem;
+            }
+            @media (max-width:950px){
+                padding:0 .85rem;
+            }
+            @media (max-width:699px){
+                display:none;
             }
         }
     }
