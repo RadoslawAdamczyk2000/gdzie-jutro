@@ -1,15 +1,22 @@
 import type { NextPage } from "next";
 import fetcher from "../lib/wordpress/fetcher";
 import { ALL_POSTS } from "../lib/wordpress/api";
+import LayoutPage from "../schemas/LayoutPage";
 interface i {
   excerpt:string;
   title:string;
 }
 const Page:NextPage = () => {
   return( 
-    <div>
-     asd
-    </div>
+    <LayoutPage
+      title=''
+      description=""
+      image=""
+    >
+      <>
+        asd
+      </>
+    </LayoutPage>
   );
 };
 
