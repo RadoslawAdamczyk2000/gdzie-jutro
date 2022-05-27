@@ -1,4 +1,44 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+interface menuButton {
+    active:boolean;
+}
+export const MenuButtonWrapper = styled.div<menuButton>`
+    @media only screen {
+        @media (max-width:698px){
+            align-items:center;
+            cursor:pointer;
+            display:flex;
+            flex-flow:column nowrap;
+            height:2.75rem;
+            justify-content:space-evenly;
+            overflow:hidden;
+            position:relative;
+            width:2.75rem;
+            & > span{
+                background-color:${({theme}) => theme.colors.navigation.color};
+                height:.25rem;
+                opacity:1;
+                transition:.12s linear background-color,.12s .12s linear display, .12s linear left,.12s linear opacity, .12s linear top, .12s linear transform, .12s linear visibility;
+                visibility:visible;
+                width:100%;
+            }
+            ${({active}) => active && css`
+                & > span{
+                    left:50%;
+                    position:absolute;
+                    top:50%;
+                    &:nth-of-type(1){
+                        transform:translate(-50%,-50%) rotate(45deg);
+                    }
+                    &:nth-of-type(2){
+                        transform:translate(-50%,-50%) rotate(-45deg);
+                    }
+                }
+                
+            `}
+        }
+    }
+`
 
 export const MenuItemWrapper = styled.li`
     a{
@@ -74,13 +114,26 @@ export const MenuItemWrapper = styled.li`
             align-items:start;
             background-color:${({theme}) => theme.colors.navigation.submenu};
             border-radius:0 1.5rem 1.5rem 1.5rem;
+            color:${({theme}) => theme.colors.navigation.color};
             display:flex;
             flex-flow:column;
             justify-content:center;
             position:absolute;
             padding:.85rem 1.8rem;
             row-gap:.35rem;
+            @media only screen{
+                @media (max-width:400px){
+                    border-radius:1.25rem;
+                    max-width:99%;
+                    padding:1.25rem 1.2rem;
+                    position:relative;
+                }
+                @media (max-width:220px){
+                    padding:1.25rem .85rem;
+                }
+            }
             & > li{
+                max-width:95%;
                 width:18rem;
                 & > a{
                     font-size:1.8rem;
@@ -96,7 +149,6 @@ export const MenuItemWrapper = styled.li`
         }
     }
 `
-
 export const MenuWrapper = styled.menu`
     align-items:center;
     display:flex;
@@ -110,6 +162,9 @@ export const MenuWrapper = styled.menu`
         }
         @media (max-width:750px){
             gap:.5rem;
+        }
+        @media (max-width:400px){
+            flex-flow:column;
         }
     }
     

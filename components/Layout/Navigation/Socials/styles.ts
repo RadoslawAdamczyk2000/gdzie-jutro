@@ -21,6 +21,13 @@ export const SocialWrapper = styled.li`
                 transform:scale(1.15);
             }
         }
+        @media only screen{
+            @media (max-width:250px){
+                font-size:1.85rem;
+                height:2.35rem;
+                width:2.35rem;
+            }
+        }
     }
 `
 export const SocialsWrapper = styled.ul`

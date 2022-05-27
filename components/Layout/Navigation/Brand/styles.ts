@@ -14,4 +14,14 @@ export const BrandWrapper = styled.div`
             transform:scale(.95);
         }
     }
+    @media only screen{
+        @media (max-width:699px){
+            height:5rem;
+            width:8rem;
+        }
+        @media (max-width:250px){
+            height:5rem;
+            width:6rem;
+        }
+    }
 `

@@ -1,7 +1,11 @@
-import { ReactElement } from "react";
+import { MouseEventHandler, ReactElement } from "react";
 import { IntSeo } from "../All/interface";
 export interface IntLayoutPage extends IntSeo {
     children:ReactElement;
+}
+export interface IntMenuButton {
+    handle:MouseEventHandler;
+    isActive:boolean;
 }
 export interface IntMenuItem extends IntSubmenuMenuItem {
     isExpand:boolean;
