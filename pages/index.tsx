@@ -5,22 +5,15 @@ interface i {
   excerpt:string;
   title:string;
 }
-const Home:NextPage = ({allPosts}:{allPosts:object[]}) => {
-  const posts = allPosts;
-  console.log(posts);
+const Page:NextPage = () => {
   return( 
     <div>
-      {posts.slice(0,5).map(({excerpt,title}:i,key:number) =>
-        <div key={key}>
-          <h2>{title}</h2>
-          <p dangerouslySetInnerHTML={{__html:excerpt}}/>
-        </div>
-      )}
+     asd
     </div>
   );
 };
 
-export default Home;
+export default Page;
 
 export const getStaticProps = async () => {
   const response = await fetcher(ALL_POSTS);
