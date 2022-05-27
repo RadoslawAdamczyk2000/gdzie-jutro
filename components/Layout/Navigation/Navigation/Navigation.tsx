@@ -1,18 +1,24 @@
 import Brand from "../Brand/Brand"
 import Menu from "../Menu/Menu";
+import Socials from "../Socials/Socials";
+import { NavigationWrapper } from "./styles";
 
 const Navigation = () => {
     return(
         <>
-            <nav className="desktop">
+            <NavigationWrapper className="desktop">
                 <Brand/>
+                <Menu/>
                 <div>
-                    <Menu/>
+                        <Socials/>
                 </div>
-            </nav>
+            </NavigationWrapper>
             {/* <nav className="mobile">
                 <div>
                     <Brand/>
+                    <div>
+
+                    </div>
                 </div>
                 <div>
                     <Menu/>

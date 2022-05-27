@@ -1,9 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
+import { BrandWrapper } from "./styles";
 
 const Brand = () => {
     return(
-        <div className="brand">
+        <BrandWrapper>
             <Link href="/">
                 <a>
                     <figure>
@@ -19,7 +20,7 @@ const Brand = () => {
                     </figure>
                 </a>
             </Link>
-        </div>
+        </BrandWrapper>
     )
 }
 export default Brand;
