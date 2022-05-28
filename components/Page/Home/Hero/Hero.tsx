@@ -4,7 +4,7 @@ import { HeroWrapper } from "./styles";
 const Hero = () => {
     return(
         <HeroWrapper>
-            <section>
+            <div>
                 <figure>
                     <Image
                         alt=''
@@ -15,15 +15,21 @@ const Hero = () => {
                     />
                 </figure>
                 <div>
-                    <h1>Gdy Orient zmiesza się z Zachodem - historia anatolijskiego rocka</h1>
-                    <Link href='#'>
-                        <a>
-                            Przeczytaj
-                        </a>
-                    </Link>
+                    <section>
+                        <h1>
+                            Gdy Orient zmiesza się z Zachodem - historia anatolijskiego rocka
+                        </h1>
+                        <div>
+                            <Link href='#'>
+                                <a>
+                                    Przeczytaj
+                                </a>
+                            </Link>
+                        </div>
+                    </section>
                 </div>
 
-            </section>
+            </div>
             <ul>
                 <li><span/></li>
                 <li><span/></li>
