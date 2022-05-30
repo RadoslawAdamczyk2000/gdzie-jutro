@@ -2,7 +2,7 @@ import Document, {Html,Head,Main,NextScript,DocumentContext} from "next/document
 import { ServerStyleSheet } from "styled-components";
 
 class MyDocument extends Document {
-    static async getInitialProps(ctx: DocumentContext) {
+    static async getInitialProps(DocumentContext) {
       const sheet = new ServerStyleSheet();
       const originalRenderPage = ctx.renderPage;
       try {
