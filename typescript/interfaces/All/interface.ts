@@ -1,3 +1,10 @@
+export interface IntArticle{
+    content:string;
+    image:string;
+    isHome:boolean;
+    link:string;
+    title:string;
+}
 export interface IntSeo {
     canonical?:string;
     description:string;

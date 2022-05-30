@@ -17,6 +17,8 @@ export const Global = createGlobalStyle`
         text-decoration:none;
     }
     body{
+        background-color:${({theme}) => theme.colors.background};
+        color:${({theme}) => theme.colors.color};
         font-family: 'Quicksand', sans-serif;
         font-size:1.6rem;
     }
@@ -34,5 +36,11 @@ export const Global = createGlobalStyle`
     ol,
     ul{
         list-style:none;
+    }
+    main{
+        &.home{
+            margin:2rem auto;
+            width:95%;
+        }
     }
 `
