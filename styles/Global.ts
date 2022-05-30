@@ -41,6 +41,12 @@ export const Global = createGlobalStyle`
         &.home{
             margin:2rem auto;
             width:95%;
+            & > article,
+            & > section,
+            & > ul{
+                margin:4rem auto;
+            }
+
         }
     }
 `

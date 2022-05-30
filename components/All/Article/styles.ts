@@ -21,6 +21,9 @@ export const ArticleWrapper = styled.li`
         flex-shrink:0;
         width:40rem;
         @media only screen {
+            @media (min-width:1450px){
+                width:50rem;
+            }
             @media (max-width:1050px){
                 width:35rem;
             }

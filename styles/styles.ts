@@ -15,6 +15,7 @@ export const theme:DefaultTheme = {
       hero: "hsla(0, 0%, 12%,.55)",
       primary: "#33EE55",
       secondary: "#3d3d3d",
+      tertiary:'#0C9726'
     },
   },
 };

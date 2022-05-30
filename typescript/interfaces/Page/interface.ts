@@ -1,3 +1,7 @@
+export interface IntAboutHome {
+    content:string;
+    title:string;
+}
 export interface IntArticlesMap {
     excerpt:string;
     title:string;

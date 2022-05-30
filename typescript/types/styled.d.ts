@@ -16,6 +16,7 @@ declare module 'styled-components' {
             hero:string;
             primary:string;
             secondary:string;
+            tertiary:string;
         }
     }
   }
