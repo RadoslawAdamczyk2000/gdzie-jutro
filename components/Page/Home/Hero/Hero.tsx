@@ -1,25 +1,28 @@
 import Image from "next/image"
 import Link from "next/link"
+import { IntHero } from "../../../../typescript/interfaces/Page/interface";
 import { HeroWrapper } from "./styles";
-const Hero = () => {
+const Hero = ({image,title}:IntHero) => {
     return(
         <HeroWrapper>
             <div>
                 <figure>
                     <Image
-                        alt=''
+                        alt={title}
                         loading='eager'
                         layout="fill"
                         objectFit='cover'
                         objectPosition='center'
                         priority
-                        src='https://images.unsplash.com/photo-1647375233873-328cb125bcdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=933&q=80'
+                        title={title}
+                        src={image}
+                        quality={87}
                     />
                 </figure>
                 <div>
                     <section>
                         <h1>
-                            Gdy Orient zmiesza się z Zachodem - historia anatolijskiego rocka
+                            {title}
                         </h1>
                         <div>
                             <Link href='#'>

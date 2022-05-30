@@ -25,7 +25,7 @@ const Article = ({content,image,isHome,link,title}:IntArticle) => {
                             </div>
                             <figcaption>
                                 <h3>
-                                    {title}
+                                    {title.substr(0,25)}...
                                 </h3>
                                 <p 
                                     dangerouslySetInnerHTML={{__html:content.substr(0,150) + '...'}}

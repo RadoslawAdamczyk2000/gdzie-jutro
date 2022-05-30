@@ -12,7 +12,22 @@ export const ALL_POSTS = `
             }
         }
     }
-`
+`;
+export const LASTEST_POSTS = `
+query getLastestPosts {
+    posts(first: 25) {
+      nodes {
+        title
+        excerpt
+        seo {
+          opengraphImage {
+            mediaItemUrl
+          }
+        }
+      }
+    }
+  }
+`;
 //  ssr
 
 //  post by a slug

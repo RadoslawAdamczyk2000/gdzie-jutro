@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export const Articles = styled.ul`
     &.home{
-        align-items:center;
+        align-items:start;
         display:flex;
         flex-flow:row wrap;
         justify-content:center;
@@ -18,7 +18,6 @@ export const Articles = styled.ul`
 `
 export const ArticleWrapper = styled.li`
     &.home{
-        background:silver;
         flex-shrink:0;
         width:40rem;
         @media only screen {
